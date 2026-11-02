@@ -1,0 +1,212 @@
+{
+  "extName": {
+    "message": "Tempo – Playback Speed for YouTube"
+  },
+  "extShortName": {
+    "message": "Tempo"
+  },
+  "extDescription": {
+    "message": "Watch YouTube at your own pace. Set the speed from your keyboard, skip silences and sponsors, and let smart speed adapt to every speaker."
+  },
+  "actionTitle": {
+    "message": "Tempo"
+  },
+  "playbackSpeed": {
+    "message": "Playback speed"
+  },
+  "normal": {
+    "message": "Normal"
+  },
+  "decrease": {
+    "message": "Decrease speed"
+  },
+  "increase": {
+    "message": "Increase speed"
+  },
+  "reset": {
+    "message": "Reset"
+  },
+  "statusLocked": {
+    "message": "Speed stays the same across videos"
+  },
+  "statusNormal": {
+    "message": "Press Shift + ↑ to start at 2×"
+  },
+  "statusUnavailable": {
+    "message": "Open a YouTube video to get started"
+  },
+  "statusDisabled": {
+    "message": "Tempo is turned off"
+  },
+  "featureOn": {
+    "message": "On"
+  },
+  "silenceTitle": {
+    "message": "Skip silence"
+  },
+  "silenceOff": {
+    "message": "Speed through pauses"
+  },
+  "silenceOn": {
+    "message": "Pauses play at $1"
+  },
+  "silenceUnavailable": {
+    "message": "Not available for this video"
+  },
+  "silenceStyle": {
+    "message": "Skip style"
+  },
+  "styleGentle": {
+    "message": "Gentle"
+  },
+  "styleFast": {
+    "message": "Fast"
+  },
+  "smartTitle": {
+    "message": "Smart speed"
+  },
+  "smartOff": {
+    "message": "Adapts to how fast people talk"
+  },
+  "smartFromCaptions": {
+    "message": "Following the captions · $1"
+  },
+  "smartFromAudio": {
+    "message": "Following the audio · $1"
+  },
+  "smartWaiting": {
+    "message": "Learning the pace…"
+  },
+  "segmentsTitle": {
+    "message": "Skip sponsors"
+  },
+  "segmentsOff": {
+    "message": "Sponsors, intros and reminders"
+  },
+  "segmentsOn": {
+    "message": "Skipping with SponsorBlock"
+  },
+  "skipped_sponsor": {
+    "message": "Sponsor skipped"
+  },
+  "skipped_selfpromo": {
+    "message": "Promotion skipped"
+  },
+  "skipped_interaction": {
+    "message": "Reminder skipped"
+  },
+  "skipped_intro": {
+    "message": "Intro skipped"
+  },
+  "undo": {
+    "message": "Undo"
+  },
+  "statsEmpty": {
+    "message": "Time you save will show up here"
+  },
+  "statsSaved": {
+    "message": "You've saved $1 on this video"
+  },
+  "statsAhead": {
+    "message": "$1 more than watching at 2×"
+  },
+  "statsWatched": {
+    "message": "$1 watched"
+  },
+  "statsMark2x": {
+    "message": "Constant 2×"
+  },
+  "remaining": {
+    "message": "· $1 left"
+  },
+  "remainingTooltip": {
+    "message": "Time left at your current speed"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "back": {
+    "message": "Back"
+  },
+  "settingEnabled": {
+    "message": "Use Tempo on YouTube"
+  },
+  "settingEnabledHint": {
+    "message": "Turns all Tempo features on or off"
+  },
+  "settingRemaining": {
+    "message": "Time remaining"
+  },
+  "settingRemainingHint": {
+    "message": "Shows time left at your speed in the player"
+  },
+  "settingOverlay": {
+    "message": "Speed indicator"
+  },
+  "settingOverlayHint": {
+    "message": "Briefly shows the speed when it changes"
+  },
+  "shortcuts": {
+    "message": "Keyboard shortcuts"
+  },
+  "shortcutUp": {
+    "message": "Faster (starts at 2×)"
+  },
+  "shortcutDown": {
+    "message": "Slower"
+  },
+  "durationSec": {
+    "message": "$1 s"
+  },
+  "durationMin": {
+    "message": "$1 min $2 s"
+  },
+  "durationHour": {
+    "message": "$1 h $2 min"
+  },
+  "welcomeTitle": {
+    "message": "You're all set"
+  },
+  "welcomeLead": {
+    "message": "Watch YouTube at your own pace. Here is the one shortcut to know."
+  },
+  "welcomeUpTitle": {
+    "message": "Speed up"
+  },
+  "welcomeUpText": {
+    "message": "Starts at 2×, then +0.25× with every press, up to 10×"
+  },
+  "welcomeDownTitle": {
+    "message": "Slow down"
+  },
+  "welcomeDownText": {
+    "message": "Going back to 1× hands control back to YouTube"
+  },
+  "welcomeMoreTitle": {
+    "message": "More from Tempo"
+  },
+  "welcomeSilenceText": {
+    "message": "Pauses fly by while speech stays at your speed."
+  },
+  "welcomeSmartText": {
+    "message": "Slows down fast talkers and speeds up slow ones."
+  },
+  "welcomeSegmentsText": {
+    "message": "Jumps over sponsors and intros, with one-tap Undo."
+  },
+  "welcomePinTip": {
+    "message": "Pin Tempo to your toolbar to turn these on and see the time you save."
+  },
+  "welcomeOpenYouTube": {
+    "message": "Open YouTube"
+  },
+  "privacyPolicy": {
+    "message": "Privacy policy"
+  },
+  "howItWorks": {
+    "message": "How Tempo works"
+  },
+  "attribution": {
+    "message": "Sponsor data from SponsorBlock (CC BY-NC-SA 4.0)"
+  }
+}

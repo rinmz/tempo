@@ -1,0 +1,212 @@
+{
+  "extName": {
+    "message": "Tempo – YouTube için Oynatma Hızı"
+  },
+  "extShortName": {
+    "message": "Tempo"
+  },
+  "extDescription": {
+    "message": "YouTube'u kendi temponuzda izleyin. Hızı klavyeden ayarlayın, sessizlikleri ve sponsorları atlayın; akıllı hız her konuşmacıya uyum sağlasın."
+  },
+  "actionTitle": {
+    "message": "Tempo"
+  },
+  "playbackSpeed": {
+    "message": "Oynatma hızı"
+  },
+  "normal": {
+    "message": "Normal"
+  },
+  "decrease": {
+    "message": "Hızı azalt"
+  },
+  "increase": {
+    "message": "Hızı artır"
+  },
+  "reset": {
+    "message": "Sıfırla"
+  },
+  "statusLocked": {
+    "message": "Hız videolar arasında korunur"
+  },
+  "statusNormal": {
+    "message": "2× ile başlamak için Shift + ↑"
+  },
+  "statusUnavailable": {
+    "message": "Başlamak için bir YouTube videosu açın"
+  },
+  "statusDisabled": {
+    "message": "Tempo kapalı"
+  },
+  "featureOn": {
+    "message": "Açık"
+  },
+  "silenceTitle": {
+    "message": "Sessizliği atla"
+  },
+  "silenceOff": {
+    "message": "Duraklamaları hızlı geçer"
+  },
+  "silenceOn": {
+    "message": "Duraklamalar $1 hızında"
+  },
+  "silenceUnavailable": {
+    "message": "Bu videoda kullanılamıyor"
+  },
+  "silenceStyle": {
+    "message": "Atlama stili"
+  },
+  "styleGentle": {
+    "message": "Yumuşak"
+  },
+  "styleFast": {
+    "message": "Hızlı"
+  },
+  "smartTitle": {
+    "message": "Akıllı hız"
+  },
+  "smartOff": {
+    "message": "Konuşma hızına uyum sağlar"
+  },
+  "smartFromCaptions": {
+    "message": "Altyazıya göre · $1"
+  },
+  "smartFromAudio": {
+    "message": "Sese göre · $1"
+  },
+  "smartWaiting": {
+    "message": "Tempo öğreniliyor…"
+  },
+  "segmentsTitle": {
+    "message": "Sponsorları atla"
+  },
+  "segmentsOff": {
+    "message": "Sponsorlar, girişler ve hatırlatmalar"
+  },
+  "segmentsOn": {
+    "message": "SponsorBlock ile atlanıyor"
+  },
+  "skipped_sponsor": {
+    "message": "Sponsor atlandı"
+  },
+  "skipped_selfpromo": {
+    "message": "Tanıtım atlandı"
+  },
+  "skipped_interaction": {
+    "message": "Hatırlatma atlandı"
+  },
+  "skipped_intro": {
+    "message": "Giriş atlandı"
+  },
+  "undo": {
+    "message": "Geri al"
+  },
+  "statsEmpty": {
+    "message": "Kazandığınız süre burada görünecek"
+  },
+  "statsSaved": {
+    "message": "Bu videoda $1 kazandınız"
+  },
+  "statsAhead": {
+    "message": "Sabit 2×'e göre $1 daha fazla"
+  },
+  "statsWatched": {
+    "message": "$1 izlendi"
+  },
+  "statsMark2x": {
+    "message": "Sabit 2×"
+  },
+  "remaining": {
+    "message": "· $1 kaldı"
+  },
+  "remainingTooltip": {
+    "message": "Mevcut hızınızla kalan süre"
+  },
+  "settings": {
+    "message": "Ayarlar"
+  },
+  "back": {
+    "message": "Geri"
+  },
+  "settingEnabled": {
+    "message": "Tempo'yu YouTube'da kullan"
+  },
+  "settingEnabledHint": {
+    "message": "Tüm Tempo özelliklerini açar veya kapatır"
+  },
+  "settingRemaining": {
+    "message": "Kalan süre"
+  },
+  "settingRemainingHint": {
+    "message": "Hızınıza göre kalan süreyi oynatıcıda gösterir"
+  },
+  "settingOverlay": {
+    "message": "Hız göstergesi"
+  },
+  "settingOverlayHint": {
+    "message": "Hız değiştiğinde kısaca gösterir"
+  },
+  "shortcuts": {
+    "message": "Klavye kısayolları"
+  },
+  "shortcutUp": {
+    "message": "Hızlandır (2×'ten başlar)"
+  },
+  "shortcutDown": {
+    "message": "Yavaşlat"
+  },
+  "durationSec": {
+    "message": "$1 sn"
+  },
+  "durationMin": {
+    "message": "$1 dk $2 sn"
+  },
+  "durationHour": {
+    "message": "$1 sa $2 dk"
+  },
+  "welcomeTitle": {
+    "message": "Her şey hazır"
+  },
+  "welcomeLead": {
+    "message": "YouTube'u kendi temponuzda izleyin. Bilmeniz gereken tek kısayol bu."
+  },
+  "welcomeUpTitle": {
+    "message": "Hızlandır"
+  },
+  "welcomeUpText": {
+    "message": "2×'ten başlar, her basışta +0,25×, en fazla 10×"
+  },
+  "welcomeDownTitle": {
+    "message": "Yavaşlat"
+  },
+  "welcomeDownText": {
+    "message": "1×'e dönünce kontrol YouTube'a geçer"
+  },
+  "welcomeMoreTitle": {
+    "message": "Tempo ile daha fazlası"
+  },
+  "welcomeSilenceText": {
+    "message": "Duraklamalar hızla geçer, konuşma sizin hızınızda kalır."
+  },
+  "welcomeSmartText": {
+    "message": "Hızlı konuşanı yavaşlatır, yavaş konuşanı hızlandırır."
+  },
+  "welcomeSegmentsText": {
+    "message": "Sponsorları ve girişleri atlar; tek dokunuşla geri alınır."
+  },
+  "welcomePinTip": {
+    "message": "Bu özellikleri açmak ve kazandığınız süreyi görmek için Tempo'yu araç çubuğuna sabitleyin."
+  },
+  "welcomeOpenYouTube": {
+    "message": "YouTube'u aç"
+  },
+  "privacyPolicy": {
+    "message": "Gizlilik politikası"
+  },
+  "howItWorks": {
+    "message": "Tempo nasıl çalışır"
+  },
+  "attribution": {
+    "message": "Sponsor verileri: SponsorBlock (CC BY-NC-SA 4.0)"
+  }
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tempo · Privacy policy</title>
+  <link rel="icon" href="../icons/icon32.png">
+  <style>
+    :root { --bg: #fff; --fg: #1f1f1f; --muted: #444746; --line: #e1e3e1; --link: #0b57d0; color-scheme: light; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #131314; --fg: #e3e3e3; --muted: #c4c7c5; --line: #444746; --link: #a8c7fa; color-scheme: dark; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+      font: 400 15px/24px "Google Sans", "Google Sans Text", Roboto, "Segoe UI", Arial, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+    header { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 500; }
+    h1 { margin: 32px 0 4px; font-size: 32px; font-weight: 400; line-height: 40px; }
+    h2 { margin: 32px 0 8px; font-size: 18px; font-weight: 500; }
+    .meta { color: var(--muted); font-size: 13px; }
+    p, li { color: var(--fg); }
+    ul { padding-left: 20px; }
+    a { color: var(--link); }
+    hr { margin: 56px 0; border: 0; border-top: 1px solid var(--line); }
+    code { font-size: 13px; }
+  </style>
+</head>
+<body>
+<main>
+  <header><img src="../icons/icon32.png" alt="" width="28" height="28"> Tempo</header>
+
+  <!-- ===================== English ===================== -->
+  <section lang="en">
+    <h1>Privacy policy</h1>
+    <p class="meta">Last updated: November 1, 2026</p>
+
+    <p>Tempo is a browser extension that controls video playback speed on YouTube. It is built to work entirely on your device. Tempo has no accounts, no analytics, no advertising and no tracking, and it does not sell or share personal data.</p>
+
+    <h2>What Tempo stores</h2>
+    <p>Your Tempo settings (for example, which features are turned on) are saved with Chrome's storage. If you have Chrome sync turned on, Chrome syncs these settings across your devices through your Google Account. Tempo does not keep any history of what you watch.</p>
+
+    <h2>What Tempo processes on your device</h2>
+    <ul>
+      <li><strong>Audio levels.</strong> When Skip silence or Smart speed is on, Tempo measures how loud the current video is to detect pauses and speaking pace. This happens in memory, in real time. Audio is never recorded, stored or sent anywhere.</li>
+      <li><strong>Captions.</strong> When Smart speed is on, Tempo reads the timing of the video's captions that YouTube already provides in the page, to estimate how fast people speak. Captions are processed on your device and are not sent anywhere.</li>
+      <li><strong>Watch statistics.</strong> The time saved shown in the Tempo menu is calculated for the current video only and is discarded when you leave it.</li>
+    </ul>
+
+    <h2>Skip sponsors (optional)</h2>
+    <p>This feature is off by default and asks for your permission when you turn it on. It looks up sponsor, intro and reminder segments from the community database <a href="https://sponsor.ajay.app/">SponsorBlock</a>. To protect your privacy, Tempo never sends the video ID: it sends only the first four characters of a SHA-256 hash of the ID, receives a list of many videos that share this prefix, and picks the right one on your device. As with any web request, SponsorBlock's server can see your IP address. SponsorBlock's own privacy policy applies to their service. Segment data © SponsorBlock contributors, used under CC BY-NC-SA 4.0.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><code>storage</code>: saves your settings.</li>
+      <li>Access to <code>www.youtube.com</code>: controls the video player's speed and shows the speed indicator and time remaining.</li>
+      <li>Access to <code>sponsor.ajay.app</code> (optional): requested only when you turn on Skip sponsors.</li>
+    </ul>
+
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the updated version will be published here with a new date. Questions: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>.</p>
+  </section>
+
+  <hr>
+
+  <!-- ===================== Türkçe ===================== -->
+  <section lang="tr">
+    <h1>Gizlilik politikası</h1>
+    <p class="meta">Son güncelleme: 1 Kasım 2026</p>
+
+    <p>Tempo, YouTube'da video oynatma hızını kontrol eden bir tarayıcı eklentisidir. Tamamen cihazınızda çalışacak şekilde tasarlanmıştır. Tempo'da hesap, analiz, reklam veya takip yoktur; kişisel verileri satmaz veya paylaşmaz.</p>
+
+    <h2>Tempo'nun sakladıkları</h2>
+    <p>Tempo ayarlarınız (örneğin hangi özelliklerin açık olduğu) Chrome'un depolama alanına kaydedilir. Chrome senkronizasyonu açıksa Chrome bu ayarları Google Hesabınız üzerinden cihazlarınız arasında eşitler. Tempo izlediklerinizin geçmişini tutmaz.</p>
+
+    <h2>Tempo'nun cihazınızda işledikleri</h2>
+    <ul>
+      <li><strong>Ses seviyesi.</strong> Sessizliği atla veya Akıllı hız açıkken Tempo, duraklamaları ve konuşma temposunu algılamak için videonun ses yüksekliğini ölçer. Bu işlem bellekte, anlık olarak yapılır. Ses asla kaydedilmez, saklanmaz veya bir yere gönderilmez.</li>
+      <li><strong>Altyazılar.</strong> Akıllı hız açıkken Tempo, konuşma hızını tahmin etmek için YouTube'un sayfada zaten sunduğu altyazıların zamanlamasını okur. Altyazılar cihazınızda işlenir ve bir yere gönderilmez.</li>
+      <li><strong>İzleme istatistikleri.</strong> Tempo menüsünde gösterilen kazanılan süre yalnızca mevcut video için hesaplanır ve videodan ayrıldığınızda silinir.</li>
+    </ul>
+
+    <h2>Sponsorları atla (isteğe bağlı)</h2>
+    <p>Bu özellik varsayılan olarak kapalıdır ve açtığınızda izninizi ister. Sponsor, giriş ve hatırlatma bölümlerini topluluk veritabanı <a href="https://sponsor.ajay.app/">SponsorBlock</a>'tan alır. Gizliliğinizi korumak için Tempo video kimliğini asla göndermez: yalnızca kimliğin SHA-256 özetinin ilk dört karakterini gönderir, bu önekle başlayan birçok videonun listesini alır ve doğru olanı cihazınızda seçer. Her web isteğinde olduğu gibi SponsorBlock sunucusu IP adresinizi görebilir. SponsorBlock hizmeti için kendi gizlilik politikası geçerlidir. Bölüm verileri © SponsorBlock katkıda bulunanları, CC BY-NC-SA 4.0 lisansıyla kullanılmaktadır.</p>
+
+    <h2>İzinler</h2>
+    <ul>
+      <li><code>storage</code>: ayarlarınızı kaydeder.</li>
+      <li><code>www.youtube.com</code> erişimi: video oynatıcının hızını kontrol eder, hız göstergesini ve kalan süreyi gösterir.</li>
+      <li><code>sponsor.ajay.app</code> erişimi (isteğe bağlı): yalnızca Sponsorları atla özelliğini açtığınızda istenir.</li>
+    </ul>
+
+    <h2>Değişiklikler ve iletişim</h2>
+    <p>Bu politika değişirse güncel sürüm yeni tarihiyle burada yayımlanır. Sorularınız için: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>.</p>
+  </section>
+</main>
+</body>
+</html>

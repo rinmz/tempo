@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tempo</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <!-- ===================== Main view ===================== -->
+  <main class="view" id="view-main">
+    <header class="top-bar">
+      <img class="top-bar__logo" src="../icons/icon32.png" alt="" width="20" height="20">
+      <span class="top-bar__title" data-i18n="extShortName">Tempo</span>
+      <button class="icon-btn" id="open-settings" type="button" data-i18n-title="settings" data-i18n-aria="settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+      </button>
+    </header>
+
+    <!-- Speed -->
+    <section class="speed" aria-labelledby="speed-label">
+      <span class="visually-hidden" id="speed-label" data-i18n="playbackSpeed">Playback speed</span>
+      <button class="tonal-btn" id="decrease" type="button" data-i18n-title="decrease" data-i18n-aria="decrease">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13H5v-2h14v2z"/></svg>
+      </button>
+      <output class="speed__value" id="speed" aria-live="polite">1×</output>
+      <button class="tonal-btn" id="increase" type="button" data-i18n-title="increase" data-i18n-aria="increase">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      </button>
+    </section>
+    <p class="speed__status">
+      <span id="status"></span>
+      <button class="link-btn" id="reset" type="button" data-i18n="reset" hidden>Reset</button>
+    </p>
+
+    <!-- Features -->
+    <ul class="list" role="list">
+      <li>
+        <label class="list-item">
+          <span class="list-item__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/></svg>
+          </span>
+          <span class="list-item__text">
+            <span class="list-item__title"><span data-i18n="silenceTitle">Skip silence</span><span class="badge">PRO</span></span>
+            <span class="list-item__support" id="silence-support"></span>
+          </span>
+          <input class="switch" type="checkbox" id="silenceSkip" role="switch">
+        </label>
+        <div class="list-item__extra" id="silence-extra" hidden>
+          <span class="range-label" data-i18n="styleGentle">Gentle</span>
+          <input class="slider" type="range" id="silenceLevel" min="0" max="4" step="1" data-i18n-aria="silenceStyle">
+          <span class="range-label" data-i18n="styleFast">Fast</span>
+        </div>
+      </li>
+      <li>
+        <label class="list-item">
+          <span class="list-item__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"/></svg>
+          </span>
+          <span class="list-item__text">
+            <span class="list-item__title"><span data-i18n="smartTitle">Smart speed</span><span class="badge">PRO</span></span>
+            <span class="list-item__support" id="smart-support"></span>
+          </span>
+          <input class="switch" type="checkbox" id="smartSpeed" role="switch">
+        </label>
+      </li>
+      <li>
+        <label class="list-item">
+          <span class="list-item__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+          </span>
+          <span class="list-item__text">
+            <span class="list-item__title" data-i18n="segmentsTitle">Skip sponsors</span>
+            <span class="list-item__support" id="segments-support"></span>
+          </span>
+          <input class="switch" type="checkbox" id="skipSegments" role="switch">
+        </label>
+      </li>
+    </ul>
+
+    <!-- Time saved: quiet summary -->
+    <footer class="saved" id="saved">
+      <svg class="saved__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+      <div class="saved__body">
+        <div class="saved__headline" id="saved-headline"></div>
+        <div class="saved__meter" id="saved-meter" hidden>
+          <div class="saved__fill" id="saved-fill"></div>
+          <div class="saved__mark" data-i18n-title="statsMark2x"></div>
+        </div>
+        <div class="saved__detail" id="saved-detail"></div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ===================== Settings view ===================== -->
+  <section class="view" id="view-settings" hidden>
+    <header class="top-bar">
+      <button class="icon-btn icon-btn--start" id="close-settings" type="button" data-i18n-title="back" data-i18n-aria="back">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+      </button>
+      <span class="top-bar__title" data-i18n="settings">Settings</span>
+    </header>
+
+    <ul class="list" role="list">
+      <li>
+        <label class="list-item">
+          <span class="list-item__text">
+            <span class="list-item__title" data-i18n="settingEnabled">Use Tempo</span>
+            <span class="list-item__support" data-i18n="settingEnabledHint"></span>
+          </span>
+          <input class="switch" type="checkbox" id="enabled" role="switch">
+        </label>
+      </li>
+      <li>
+        <label class="list-item">
+          <span class="list-item__text">
+            <span class="list-item__title" data-i18n="settingRemaining">Time remaining</span>
+            <span class="list-item__support" data-i18n="settingRemainingHint"></span>
+          </span>
+          <input class="switch" type="checkbox" id="remaining" role="switch">
+        </label>
+      </li>
+      <li>
+        <label class="list-item">
+          <span class="list-item__text">
+            <span class="list-item__title" data-i18n="settingOverlay">Speed indicator</span>
+            <span class="list-item__support" data-i18n="settingOverlayHint"></span>
+          </span>
+          <input class="switch" type="checkbox" id="overlay" role="switch">
+        </label>
+      </li>
+    </ul>
+
+    <h2 class="subheader" data-i18n="shortcuts">Keyboard shortcuts</h2>
+    <div class="shortcut">
+      <span data-i18n="shortcutUp"></span>
+      <span class="keys"><kbd>Shift</kbd><kbd>↑</kbd></span>
+    </div>
+    <div class="shortcut">
+      <span data-i18n="shortcutDown"></span>
+      <span class="keys"><kbd>Shift</kbd><kbd>↓</kbd></span>
+    </div>
+
+    <div class="about">
+      <p id="version"></p>
+      <p data-i18n="attribution">Sponsor data from SponsorBlock</p>
+      <p class="about__links">
+        <a href="../privacy/privacy.html" target="_blank" data-i18n="privacyPolicy">Privacy policy</a>
+        <a href="../welcome/welcome.html" target="_blank" data-i18n="howItWorks">How Tempo works</a>
+      </p>
+    </div>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>

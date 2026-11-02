@@ -1,0 +1,135 @@
+.tempo-overlay {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 70;
+  min-width: 132px;
+  padding: 14px 20px 12px;
+  border-radius: 16px;
+  background: rgba(32, 33, 36, 0.86);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  opacity: 0;
+  transform: translate(-50%, -6px);
+  transition: opacity 160ms ease, transform 160ms ease;
+  pointer-events: none;
+}
+
+.tempo-overlay--visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.tempo-overlay__value {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.tempo-overlay__label {
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.tempo-overlay__track {
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.tempo-overlay__fill {
+  height: 100%;
+  border-radius: 2px;
+  background: #8ab4f8;
+  transition: width 160ms ease;
+}
+
+.tempo-skip {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 12px 0 10px;
+  border-radius: 14px;
+  background: rgba(32, 33, 36, 0.8);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  fill: #8ab4f8;
+  font: 500 13px/1 "Google Sans", Roboto, Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+  opacity: 0;
+  transition: opacity 120ms ease;
+  pointer-events: none;
+}
+
+.tempo-skip--visible {
+  opacity: 1;
+}
+
+/* Snackbar: sits above the player controls, Material style */
+.tempo-snackbar {
+  position: absolute;
+  left: 12px;
+  bottom: 64px;
+  z-index: 71;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  max-width: calc(100% - 24px);
+  padding: 4px 6px 4px 16px;
+  border-radius: 4px;
+  background: #202124;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12);
+  color: #e8eaed;
+  font: 400 14px/20px "Google Sans", Roboto, Arial, sans-serif;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 150ms ease, transform 150ms ease;
+  pointer-events: none;
+}
+
+.tempo-snackbar--visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.tempo-snackbar__action {
+  height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 18px;
+  background: transparent;
+  color: #8ab4f8;
+  font: 500 14px/20px "Google Sans", Roboto, Arial, sans-serif;
+  cursor: pointer;
+}
+
+.tempo-snackbar__action:hover { background: rgba(138, 180, 248, 0.12); }
+.tempo-snackbar__action:focus-visible { outline: 2px solid #8ab4f8; outline-offset: 0; }
+
+/* Remaining time: inline with YouTube's own time display */
+.tempo-remaining {
+  margin-left: 6px;
+  color: inherit;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.tempo-remaining[hidden] { display: none; }

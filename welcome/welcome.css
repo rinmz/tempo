@@ -1,0 +1,208 @@
+:root {
+  --surface: #ffffff;
+  --surface-container: #f0f4f9;
+  --surface-container-high: #e9eef6;
+  --on-surface: #1f1f1f;
+  --on-surface-variant: #444746;
+  --primary: #0b57d0;
+  --on-primary: #ffffff;
+  --primary-container: #d3e3fd;
+  --on-primary-container: #041e49;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #131314;
+    --surface-container: #1e1f20;
+    --surface-container-high: #282a2c;
+    --on-surface: #e3e3e3;
+    --on-surface-variant: #c4c7c5;
+    --primary: #a8c7fa;
+    --on-primary: #062e6f;
+    --primary-container: #0842a0;
+    --on-primary-container: #d3e3fd;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--on-surface);
+  font: 400 16px/24px "Google Sans", "Google Sans Text", Roboto, "Segoe UI", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+svg { width: 24px; height: 24px; fill: currentColor; flex: none; }
+
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 56px 24px 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+h1 {
+  margin: 40px 0 8px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.lead {
+  margin: 0 0 32px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--on-surface-variant);
+}
+
+h2 {
+  margin: 40px 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.card {
+  border-radius: 24px;
+  background: var(--surface-container);
+}
+
+/* Shortcuts */
+.shortcut-card { padding: 8px 24px; }
+
+.shortcut {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 0;
+}
+
+.shortcut + .shortcut { border-top: 1px solid var(--surface-container-high); }
+
+.keys {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 132px;
+}
+
+kbd {
+  min-width: 40px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: 0 1px 0 var(--surface-container-high), 0 1px 3px rgba(0, 0, 0, 0.12);
+  font: 500 15px/20px "Google Sans", Roboto, Arial, sans-serif;
+  text-align: center;
+}
+
+.plus { color: var(--on-surface-variant); font-size: 14px; }
+
+.shortcut__text { display: flex; flex-direction: column; }
+.shortcut__text strong { font-weight: 500; }
+.shortcut__text span { font-size: 14px; line-height: 20px; color: var(--on-surface-variant); }
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+}
+
+.feature__icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+}
+
+.feature__icon svg { width: 20px; height: 20px; }
+
+.feature__title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.feature__text { font-size: 14px; line-height: 20px; color: var(--on-surface-variant); }
+
+.badge {
+  padding: 0 6px;
+  border-radius: 4px;
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Tip & actions */
+.tip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 32px 0 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--on-surface-variant);
+}
+
+.tip svg { width: 20px; height: 20px; }
+
+.actions { margin-top: 32px; }
+
+.filled-btn {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 20px;
+  background: var(--primary);
+  color: var(--on-primary);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.filled-btn:hover { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+.filled-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+.footer {
+  margin-top: 48px;
+  font-size: 13px;
+}
+
+.footer a { color: var(--on-surface-variant); }
+
+@media (max-width: 600px) {
+  .page { padding-top: 32px; }
+  .features { grid-template-columns: 1fr; }
+  .keys { min-width: 112px; }
+}

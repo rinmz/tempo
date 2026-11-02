@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tempo</title>
+  <link rel="icon" href="../icons/icon32.png">
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <main class="page">
+    <header class="brand">
+      <img src="../icons/icon128.png" alt="" width="48" height="48">
+      <span data-i18n="extShortName">Tempo</span>
+    </header>
+
+    <h1 data-i18n="welcomeTitle">You're all set</h1>
+    <p class="lead" data-i18n="welcomeLead">Watch YouTube at your own pace.</p>
+
+    <!-- The one thing to learn -->
+    <section class="card shortcut-card">
+      <div class="shortcut">
+        <span class="keys"><kbd>Shift</kbd><span class="plus">+</span><kbd>↑</kbd></span>
+        <span class="shortcut__text">
+          <strong data-i18n="welcomeUpTitle">Speed up</strong>
+          <span data-i18n="welcomeUpText">Starts at 2×, then +0.25× with every press</span>
+        </span>
+      </div>
+      <div class="shortcut">
+        <span class="keys"><kbd>Shift</kbd><span class="plus">+</span><kbd>↓</kbd></span>
+        <span class="shortcut__text">
+          <strong data-i18n="welcomeDownTitle">Slow down</strong>
+          <span data-i18n="welcomeDownText">Back to 1× returns control to YouTube</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <h2 data-i18n="welcomeMoreTitle">More from Tempo</h2>
+    <ul class="features" role="list">
+      <li class="card feature">
+        <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/></svg></span>
+        <span class="feature__title"><span data-i18n="silenceTitle">Skip silence</span><span class="badge">PRO</span></span>
+        <span class="feature__text" data-i18n="welcomeSilenceText"></span>
+      </li>
+      <li class="card feature">
+        <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"/></svg></span>
+        <span class="feature__title"><span data-i18n="smartTitle">Smart speed</span><span class="badge">PRO</span></span>
+        <span class="feature__text" data-i18n="welcomeSmartText"></span>
+      </li>
+      <li class="card feature">
+        <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg></span>
+        <span class="feature__title" data-i18n="segmentsTitle">Skip sponsors</span>
+        <span class="feature__text" data-i18n="welcomeSegmentsText"></span>
+      </li>
+    </ul>
+
+    <p class="tip">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5a2.5 2.5 0 0 0-5 0V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5a2.5 2.5 0 0 0 0-5z"/></svg>
+      <span data-i18n="welcomePinTip">Pin Tempo to your toolbar to turn features on and see the time you save.</span>
+    </p>
+
+    <div class="actions">
+      <a class="filled-btn" href="https://www.youtube.com/" data-i18n="welcomeOpenYouTube">Open YouTube</a>
+    </div>
+
+    <footer class="footer">
+      <a href="../privacy/privacy.html" data-i18n="privacyPolicy">Privacy policy</a>
+    </footer>
+  </main>
+  <script src="welcome.js"></script>
+</body>
+</html>

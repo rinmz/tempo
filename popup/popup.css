@@ -1,0 +1,397 @@
+/* Tempo popup — Material 3 tokens as used across Google's Chrome UI */
+:root {
+  --surface: #ffffff;
+  --surface-container: #f0f4f9;
+  --surface-container-high: #e9eef6;
+  --on-surface: #1f1f1f;
+  --on-surface-variant: #444746;
+  --outline-variant: #e1e3e1;
+  --primary: #0b57d0;
+  --on-primary: #ffffff;
+  --primary-container: #d3e3fd;
+  --on-primary-container: #041e49;
+  --switch-track: #e1e3e1;
+  --switch-outline: #747775;
+  --hover: rgba(31, 31, 31, 0.08);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1f1f1f;
+    --surface-container: #282a2c;
+    --surface-container-high: #333537;
+    --on-surface: #e3e3e3;
+    --on-surface-variant: #c4c7c5;
+    --outline-variant: #444746;
+    --primary: #a8c7fa;
+    --on-primary: #062e6f;
+    --primary-container: #0842a0;
+    --on-primary-container: #d3e3fd;
+    --switch-track: #333537;
+    --switch-outline: #8e918f;
+    --hover: rgba(227, 227, 227, 0.08);
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; }
+
+body {
+  width: 320px;
+  background: var(--surface);
+  color: var(--on-surface);
+  font: 400 14px/20px "Google Sans", "Google Sans Text", Roboto, "Segoe UI", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
+
+[hidden] { display: none !important; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+button { font: inherit; color: inherit; }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+/* ---------- Top bar ---------- */
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 56px;
+  padding: 0 8px 0 16px;
+}
+
+.top-bar__title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.icon-btn {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--on-surface-variant);
+  cursor: pointer;
+}
+
+.icon-btn:hover { background: var(--hover); }
+.icon-btn--start { margin-left: -8px; }
+
+/* ---------- Speed ---------- */
+.speed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 4px 16px 0;
+}
+
+.speed__value {
+  min-width: 112px;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 52px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.5px;
+}
+
+.tonal-btn {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--surface-container-high);
+  color: var(--on-surface);
+  cursor: pointer;
+  transition: background 150ms;
+}
+
+.tonal-btn:hover { background: var(--primary-container); color: var(--on-primary-container); }
+.tonal-btn:disabled { opacity: 0.38; cursor: default; background: var(--surface-container-high); color: var(--on-surface); }
+
+.speed__status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  min-height: 20px;
+  margin: 4px 16px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--on-surface-variant);
+  text-align: center;
+}
+
+.link-btn {
+  padding: 2px 6px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link-btn:hover { background: var(--hover); }
+
+/* ---------- Lists ---------- */
+.list {
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  border-top: 1px solid var(--outline-variant);
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 64px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.list-item:hover { background: var(--hover); }
+
+.list-item__icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--surface-container);
+  color: var(--on-surface-variant);
+  flex: none;
+}
+
+.list-item__text { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+
+.list-item__title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.list-item__support {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--on-surface-variant);
+}
+
+.list-item__support--active { color: var(--on-surface-variant); }
+
+.badge {
+  padding: 0 5px;
+  border-radius: 4px;
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+}
+
+.list-item__extra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px 12px 68px;
+}
+
+.range-label {
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--on-surface-variant);
+  white-space: nowrap;
+}
+
+/* ---------- Switch (Material 3) ---------- */
+.switch {
+  appearance: none;
+  position: relative;
+  flex: none;
+  width: 52px;
+  height: 32px;
+  margin: 0;
+  border: 2px solid var(--switch-outline);
+  border-radius: 16px;
+  background: var(--switch-track);
+  cursor: pointer;
+  transition: background 150ms, border-color 150ms;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--switch-outline);
+  transition: all 150ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.switch:checked { border-color: var(--primary); background: var(--primary); }
+
+.switch:checked::after {
+  top: 2px;
+  left: 22px;
+  width: 24px;
+  height: 24px;
+  background: var(--on-primary);
+}
+
+/* ---------- Slider (Material 3) ---------- */
+.slider {
+  --pct: 50%;
+  flex: 1;
+  appearance: none;
+  height: 20px;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--primary) var(--pct), var(--primary-container) var(--pct));
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 4px;
+  height: 20px;
+  margin-top: -8px;
+  border-radius: 2px;
+  background: var(--primary);
+  box-shadow: 0 0 0 4px var(--surface);
+}
+
+/* ---------- Time saved ---------- */
+.saved {
+  display: flex;
+  gap: 12px;
+  margin: 4px 12px 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: var(--surface-container);
+}
+
+.saved__icon { width: 18px; height: 18px; margin-top: 1px; color: var(--on-surface-variant); }
+.saved__body { flex: 1; min-width: 0; }
+
+.saved__headline {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--on-surface-variant);
+}
+
+.saved__headline b {
+  font-weight: 500;
+  color: var(--on-surface);
+  font-variant-numeric: tabular-nums;
+}
+
+.saved__meter {
+  position: relative;
+  height: 4px;
+  margin: 8px 0 6px;
+  border-radius: 2px;
+  background: var(--surface-container-high);
+}
+
+@media (prefers-color-scheme: dark) {
+  .saved__meter { background: #444746; }
+}
+
+.saved__fill {
+  height: 100%;
+  width: 0;
+  border-radius: 2px;
+  background: var(--primary);
+  transition: width 400ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.saved__mark {
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  width: 2px;
+  height: 10px;
+  border-radius: 1px;
+  background: var(--on-surface-variant);
+  opacity: 0.5;
+}
+
+.saved__detail {
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--on-surface-variant);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Settings view ---------- */
+.subheader {
+  margin: 8px 16px 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--primary);
+}
+
+.shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.keys { display: flex; gap: 4px; flex: none; }
+
+kbd {
+  min-width: 24px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--surface-container);
+  font: 500 12px/18px "Google Sans", Roboto, Arial, sans-serif;
+  text-align: center;
+  color: var(--on-surface-variant);
+}
+
+.about {
+  margin: 12px 16px 14px;
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--on-surface-variant);
+}
+
+.about p { margin: 0 0 2px; }
+.about__links { display: flex; gap: 16px; margin-top: 8px !important; }
+.about a { color: var(--primary); text-decoration: none; font-weight: 500; }
+.about a:hover { text-decoration: underline; }
